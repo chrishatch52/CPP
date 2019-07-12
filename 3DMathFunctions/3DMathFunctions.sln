@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.645
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "3DMathFunctions", "3DMathFunctions\3DMathFunctions.vcxproj", "{10D63E60-D9C5-4CBC-AAEF-7EFD382F72FF}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "3DMathFunctions", "3DMathFunctions.vcxproj", "{10D63E60-D9C5-4CBC-AAEF-7EFD382F72FF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -26,6 +26,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {0B19C863-79D7-459A-8B17-44183E35A4E6}
+		SolutionGuid = {2DDC156F-2880-4DB4-9C83-D9B6C35F4699}
 	EndGlobalSection
 EndGlobal
