@@ -43,6 +43,11 @@ struct Mat4x4 {
 	Vec4 mForward;
 	Vec4 mPosition;
 
-	Mat4x4(Vec4 right, Vec4 up, Vec4 forward, Vec4 position) 
-		: mRight(right), mUp(up), mForward(forward), mPosition(position){}
+	Mat4x4(Vec4 right, Vec4 up, Vec4 forward, Vec4 position) :
+		mRight(right), 
+		mUp(up), 
+		mForward(forward), 
+		mPosition(position)
+	{}
+
 };

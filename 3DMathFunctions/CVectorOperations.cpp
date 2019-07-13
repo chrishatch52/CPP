@@ -13,15 +13,6 @@ namespace VectorOperations {
 		);
 	}
 
-	Vec3 VecOps::subtract(const Vec3& u, const Vec3& v)
-	{
-		return Vec3(
-			(u.mI - v.mI),
-			(u.mJ - v.mJ),
-			(u.mK - v.mK)
-		);
-	}
-
 	Vec3 VecOps::crossProduct(const Vec3& u, const Vec3& v)
 	{
 		return Vec3(
@@ -71,6 +62,15 @@ namespace VectorOperations {
 		);
 	}
 
+	Vec3 VecOps::subtract(const Vec3& u, const Vec3& v)
+	{
+		return Vec3(
+			(u.mI - v.mI),
+			(u.mJ - v.mJ),
+			(u.mK - v.mK)
+		);
+	}
+
 	Vec4 VecOps::add(const Vec4& u, const Vec4& v)
 	{
 		return Vec4(
@@ -90,42 +90,6 @@ namespace VectorOperations {
 			(u.mW - v.mW)
 		);
 	}
-	/*
-	Vec4 VecOps::crossProduct(Vec4 u, Vec4 v)
-	{
-		return Vec4();
-	}
-
-	Vec4 VecOps::dotProduct(Vec4 u, Vec4 v)
-	{
-		return Vec4();
-	}
-
-	Vec4 VecOps::findAngle_cosine(Vec4 u, Vec4 v)
-	{
-		return Vec4();
-	}
-
-	Vec4 VecOps::findAngle_sine(Vec4 u, Vec4 v)
-	{
-		return Vec4();
-	}
-
-	Vec4 VecOps::normalize(Vec4 u)
-	{
-		return Vec4();
-	}
-
-	Vec4 VecOps::magnitude(Vec4 u)
-	{
-		return Vec4();
-	}
-
-	Vec4 VecOps::multiplyMatrix(Vec4 u, Mat4x4 A)
-	{
-		return Vec4();
-	}
-	*/
 }
 
 
