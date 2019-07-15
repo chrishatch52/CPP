@@ -1,5 +1,5 @@
 #pragma once
-#include <cmath>
+#include "stdafx.h"
 
 namespace VectorOperations {
 
