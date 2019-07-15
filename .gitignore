@@ -1,0 +1,5 @@
+*.json
+*.suo
+*.db
+*.ipch
+*.sqlite
