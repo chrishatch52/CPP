@@ -4,3 +4,11 @@
 *.ipch
 *.sqlite
 
+*.vcxproj
+*.filters
+*.log
+*.obj
+*.idb
+*.pdb
+*.lastbuildstate
+*.tlog
