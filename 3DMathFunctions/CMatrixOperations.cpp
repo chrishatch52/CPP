@@ -3,29 +3,31 @@
 
 namespace MatrixOperations {
 
+	using namespace VectorOperations;
+
 	Mat3x3 add(const Mat3x3& lhs, const Mat3x3 & rhs)
 	{
-		return Mat3x3();
+		return Mat3x3((VecOps::add(lhs.mRight,rhs.mRight)),
+						(VecOps::add(lhs.mUp, rhs.mUp)),
+						(VecOps::add(lhs.mForward, rhs.mForward)));
 	}
 
-	Mat3x3 addVector(const Mat3x3 & A, const Vec3 & x)
+	/*Mat3x3 addVector(const Mat3x3 & A, const Vec3 & x)
 	{
 		return Mat3x3();
+	}*/
+
+	Mat3x3 convertTo3x3(const Mat4 & A)
+	{
+		return Mat3x3(VecOps::toVec3(A.mRight),
+						VecOps::toVec3(A.mUp),
+						VecOps::toVec3(A.mForward));
 	}
 
-	Mat3x3 convert4x3to3x3(const Mat4x3 & A)
+	signed int determinant(const Mat3x3 & A)
 	{
-		return Mat3x3();
-	}
 
-	Mat3x3 convert4x4to3x3(const Mat4x4 & A)
-	{
-		return Mat3x3();
-	}
-
-	Mat3x3 determinant(const Mat3x3 & A)
-	{
-		return Mat3x3();
+		return 0;
 	}
 
 	Mat3x3 inverse(const Mat3x3 & A)
@@ -78,7 +80,7 @@ namespace MatrixOperations {
 		// TODO: insert return statement here
 	}
 
-	Mat4x4 determinant(const Mat4x4 & A)
+	signed int determinant(const Mat4x4 & A)
 	{
 		return Mat4x4();
 	}

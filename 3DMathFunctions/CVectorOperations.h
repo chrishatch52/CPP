@@ -23,6 +23,7 @@ namespace VectorOperations {
 	/*4 Dimensional Vectors*/
 		static Vec4 add(const Vec4& u, const Vec4& v);
 		static Vec4 subtract(const Vec4& u, const Vec4& v);
+		static Vec3 toVec3(const Vec4& A);
 	};
 
 }

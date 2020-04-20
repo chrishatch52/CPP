@@ -90,6 +90,10 @@ namespace VectorOperations {
 			(u.mW - v.mW)
 		);
 	}
+	Vec3 VecOps::toVec3(const Vec4 & A)
+	{
+		return Vec3(std::move(A.mI), std::move(A.mJ), std::move(A.mK));
+	}
 }
 
 
