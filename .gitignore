@@ -5,6 +5,7 @@
 *.sqlite
 
 *.vcxproj
+*.sln
 *.filters
 *.log
 *.obj
@@ -12,3 +13,4 @@
 *.pdb
 *.lastbuildstate
 *.tlog
+*.opendb
