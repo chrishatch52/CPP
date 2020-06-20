@@ -18,7 +18,9 @@ namespace VectorOperations {
 
 		static Vec3 normalize(const Vec3& u);
 		static float magnitude(const Vec3& u);
-		static Vec3 multiplyMatrix(const Vec3& u, const Mat3x3& A);
+		static Vec3 multiplyMatrix(Vec3& u, const Mat3x3& A);
+
+		static Vec3 scalar(float f, Vec3& u);
 
 	/*4 Dimensional Vectors*/
 		static Vec4 add(const Vec4& u, const Vec4& v);

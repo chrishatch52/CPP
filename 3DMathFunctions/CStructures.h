@@ -31,6 +31,13 @@ struct Mat2x2 {
 	
 };
 
+struct Mat2x2 {
+	Vec mRight;
+	Vec mForward;
+
+	Mat2x2(Vec right, Vec forward) : mRight(right), mForward(forward) {}
+};
+
 struct Mat3x3 {
 	Vec3 mRight;
 	Vec3 mUp;
@@ -38,6 +45,11 @@ struct Mat3x3 {
 
 	Mat3x3(Vec3 right, Vec3 up, Vec3 forward) 
 		: mRight(right), mUp(up), mForward(forward) {}
+
+	Mat3x3(float f_i, float f_j, float f_k,
+		float r_i, float r_j, float r_k,
+		float u_i, float u_j, float u_k) : 
+			mForward(Vec3(f_i, f_j, f_k)), mRight(Vec3(r_i, r_j, r_k)), mUp(Vec3(u_i, u_j, u_k)) {}
 };
 
 struct Mat4 {

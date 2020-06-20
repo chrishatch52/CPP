@@ -53,13 +53,18 @@ namespace VectorOperations {
 		return std::sqrt(std::pow(u.mI, 2) + std::pow(u.mJ, 2) + std::pow(u.mK, 2));
 	}
 
-	Vec3 VecOps::multiplyMatrix(const Vec3& u, const Mat3x3& A)
+	Vec3 VecOps::multiplyMatrix(Vec3& u, const Mat3x3& A)
 	{
 		return Vec3(
 			((A.mRight.mI * u.mI) + (A.mUp.mI * u.mI) + (A.mForward.mI * u.mI)),
 			((A.mRight.mJ * u.mJ) + (A.mUp.mJ * u.mJ) + (A.mForward.mJ * u.mJ)),
 			((A.mRight.mK * u.mK) + (A.mUp.mK * u.mK) + (A.mForward.mK * u.mK))
 		);
+	}
+
+	Vec3 VecOps::scalar(float f, Vec3 & u)
+	{
+		return Vec3((f*u.mI),(f*u.mJ),(f*u.mK));
 	}
 
 	Vec3 VecOps::subtract(const Vec3& u, const Vec3& v)
