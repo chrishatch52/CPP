@@ -12,12 +12,12 @@ namespace LinearOperations {
 
 	Mat4x4 LinOps::buildRelativeTransform(const Mat4x4& parent, const Mat4x4& child)
 	{
-		return multiply(child, MatrixOperations::inverse(parent));
+		return MatOps::multiply(child, MatOps::inverse(parent));
 	}
 
 	Mat4x4 LinOps::composeTransform(const Mat4x4& A, const Mat4x4& B)
 	{
-		return multiply(A,B);
+		return MatOps::multiply(A,B);
 	}
 
 	void LinOps::scale(Mat4x4& A, Vec4& u)

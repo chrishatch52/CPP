@@ -19,7 +19,7 @@ struct Vec4 : Vec3 {
 
 	float mW;
 
-	Vec4(float i, float j, float k, float w) 
+	Vec4(float i, float j, float k, float w)
 		: Vec3(i, j, k), mW(w) {}
 };
 
@@ -28,7 +28,7 @@ struct Mat2x2 {
 	Vec mUp;
 
 	Mat2x2(Vec right, Vec up) : mRight(right), mUp(up) {}
-	
+
 };
 
 struct Mat2x2 {
@@ -43,12 +43,12 @@ struct Mat3x3 {
 	Vec3 mUp;
 	Vec3 mForward;
 
-	Mat3x3(Vec3 right, Vec3 up, Vec3 forward) 
+	Mat3x3(Vec3 right, Vec3 up, Vec3 forward)
 		: mRight(right), mUp(up), mForward(forward) {}
 
 	Mat3x3(float f_i, float f_j, float f_k,
 		float r_i, float r_j, float r_k,
-		float u_i, float u_j, float u_k) : 
+		float u_i, float u_j, float u_k) :
 			mForward(Vec3(f_i, f_j, f_k)), mRight(Vec3(r_i, r_j, r_k)), mUp(Vec3(u_i, u_j, u_k)) {}
 };
 
@@ -72,6 +72,6 @@ struct Mat4x4 : Mat4 {
 
 	Mat4x4(Vec4 right, Vec4 up, Vec4 forward, Vec4 position)
 		: Mat4(right, up, forward),
-			mPosition(position) 	{}
+			mPosition(position) {}
 
 };
