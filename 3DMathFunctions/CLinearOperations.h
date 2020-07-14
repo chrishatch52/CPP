@@ -2,7 +2,8 @@
 #include "CMatrixOperations.h"
 #include "CVectorOperations.h"
 
-using namespace MatrixOperations;
+
+using namespace MatOps;
 
 namespace LinearOperations {
 

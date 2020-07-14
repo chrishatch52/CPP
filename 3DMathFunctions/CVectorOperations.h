@@ -1,11 +1,10 @@
 #pragma once
-#include "stdafx.h"
+#include "CStructures.h"
+#include <cmath>
+#include <utility>
 
-namespace VectorOperations {
+namespace VecOps {
 
-	class VecOps {
-
-	public:
 	/*3 Dimensional Vectors*/
 		static Vec3 add(const Vec3& u, const Vec3& v);
 		static Vec3 subtract(const Vec3& u, const Vec3& v);
@@ -26,6 +25,5 @@ namespace VectorOperations {
 		static Vec4 add(const Vec4& u, const Vec4& v);
 		static Vec4 subtract(const Vec4& u, const Vec4& v);
 		static Vec3 toVec3(const Vec4& A);
-	};
 
 }
